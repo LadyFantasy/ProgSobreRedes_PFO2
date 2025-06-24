@@ -122,3 +122,10 @@ Puedes probar la API utilizando `curl` o cualquier otro cliente de API.
     ...
   </html>
   ```
+
+## Dependencias y para qué se usan
+
+- **Flask**: Framework principal para crear la API y servir las rutas.
+- **flask_httpauth**: Para proteger rutas con autenticación básica HTTP.
+- **werkzeug**: Para el hash seguro de contraseñas y utilidades de seguridad.
+- **requests**: Usado en el cliente de consola para hacer peticiones HTTP al servidor.
