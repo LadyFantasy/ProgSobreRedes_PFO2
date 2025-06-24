@@ -81,7 +81,7 @@ Puedes probar la API utilizando `curl` o cualquier otro cliente de API.
   ```
 - **Ejemplo con `curl`**:
   ```bash
-  curl -X POST -H "Content-Type: application/json" -d "{\"usuario\":\"testuser\",\"contraseña\":\"1234\"}" http://127.0.0.1:5000/registro
+  curl -X POST -H "Content-Type: application/json" -d "{\"usuario\":\"Homero Simpson\",\"contraseña\":\"1234\"}" http://127.0.0.1:5000/registro
   ```
 - **Respuesta exitosa (201)**:
   ```json
@@ -96,12 +96,12 @@ Puedes probar la API utilizando `curl` o cualquier otro cliente de API.
 - **Descripción**: Verifica las credenciales del usuario. Utiliza autenticación básica.
 - **Ejemplo con `curl`**:
   ```bash
-  curl -X POST -u "testuser:1234" http://127.0.0.1:5000/login
+  curl -X POST -u "Homero Simpson:1234" http://127.0.0.1:5000/login
   ```
 - **Respuesta exitosa (200)**:
   ```json
   {
-    "mensaje": "Inicio de sesión exitoso para el usuario: testuser"
+    "mensaje": "Inicio de sesión exitoso para el usuario: Homero Simpson"
   }
   ```
 
@@ -111,14 +111,14 @@ Puedes probar la API utilizando `curl` o cualquier otro cliente de API.
 - **Descripción**: Muestra una página de bienvenida en HTML. Requiere autenticación básica.
 - **Ejemplo con `curl`**:
   ```bash
-  curl -u "testuser:1234" http://127.0.0.1:5000/tareas
+  curl -u "Homero Simpson:1234" http://127.0.0.1:5000/tareas
   ```
 - **Respuesta exitosa (200)**:
   ```html
   <!DOCTYPE html>
   <html lang="es">
     ...
-    <h1>¡Bienvenido a la Gestión de Tareas, testuser!</h1>
+    <h1>¡Bienvenido a la Gestión de Tareas, Homero Simpson!</h1>
     ...
   </html>
   ```
